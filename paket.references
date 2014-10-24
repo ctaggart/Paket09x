@@ -1,4 +1,2 @@
-Elmah.AzureTableStorage
-FSharp.Data.SqlClient
-FSharp.Data.SqlEnumProvider
-WindowsAzure.Storage
+Microsoft.AspNet.WebApi.Client
+Microsoft.Owin.Testing

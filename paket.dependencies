@@ -1,6 +1,4 @@
 source https://nuget.org/api/v2
 
-nuget Elmah.AzureTableStorage 0.5.2.0
-nuget FSharp.Data.SqlClient 1.4
-nuget FSharp.Data.SqlEnumProvider 0.9.0-aplha
-nuget WindowsAzure.Storage 4.3.0
+nuget Microsoft.AspNet.WebApi.Client
+nuget Microsoft.Owin.Testing
