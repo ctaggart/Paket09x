@@ -1,1 +1,4 @@
 Elmah.AzureTableStorage
+FSharp.Data.SqlClient
+FSharp.Data.SqlEnumProvider
+WindowsAzure.Storage
