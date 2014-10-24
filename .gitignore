@@ -1,4 +1,4 @@
-*.exe
+paket.exe
 *.suo
 bin
 obj
