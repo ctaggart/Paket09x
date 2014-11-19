@@ -59,8 +59,24 @@
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework'">
       <Choose>
         <When Condition="$(TargetFrameworkVersion) == 'v1.0'">
+          <ItemGroup>
+            <Reference Include="System.Data">
+              <Paket>True</Paket>
+            </Reference>
+            <Reference Include="System.Xml">
+              <Paket>True</Paket>
+            </Reference>
+          </ItemGroup>
         </When>
         <When Condition="$(TargetFrameworkVersion) == 'v1.1'">
+          <ItemGroup>
+            <Reference Include="System.Data">
+              <Paket>True</Paket>
+            </Reference>
+            <Reference Include="System.Xml">
+              <Paket>True</Paket>
+            </Reference>
+          </ItemGroup>
         </When>
         <When Condition="$(TargetFrameworkVersion) == 'v2.0'">
           <ItemGroup>
@@ -84,15 +100,16 @@
               <Private>True</Private>
               <Paket>True</Paket>
             </Reference>
+            <Reference Include="System.Data">
+              <Paket>True</Paket>
+            </Reference>
+            <Reference Include="System.Xml">
+              <Paket>True</Paket>
+            </Reference>
           </ItemGroup>
         </When>
         <When Condition="$(TargetFrameworkVersion) == 'v3.5'">
           <ItemGroup>
-            <Reference Include="LinqBridge">
-              <HintPath>packages\LinqBridge\lib\net20\LinqBridge.dll</HintPath>
-              <Private>True</Private>
-              <Paket>True</Paket>
-            </Reference>
             <Reference Include="Microsoft.SqlServer.Types">
               <HintPath>packages\Microsoft.SqlServer.Types\lib\net20\Microsoft.SqlServer.Types.dll</HintPath>
               <Private>True</Private>
@@ -106,6 +123,12 @@
             <Reference Include="ReadOnlyCollectionsInterfaces">
               <HintPath>packages\ReadOnlyCollectionInterfaces\lib\NET20\ReadOnlyCollectionsInterfaces.dll</HintPath>
               <Private>True</Private>
+              <Paket>True</Paket>
+            </Reference>
+            <Reference Include="System.Data">
+              <Paket>True</Paket>
+            </Reference>
+            <Reference Include="System.Xml">
               <Paket>True</Paket>
             </Reference>
           </ItemGroup>
@@ -132,11 +155,6 @@
               <Private>True</Private>
               <Paket>True</Paket>
             </Reference>
-            <Reference Include="LinqBridge">
-              <HintPath>packages\LinqBridge\lib\net20\LinqBridge.dll</HintPath>
-              <Private>True</Private>
-              <Paket>True</Paket>
-            </Reference>
             <Reference Include="Microsoft.SqlServer.Types">
               <HintPath>packages\Microsoft.SqlServer.Types\lib\net20\Microsoft.SqlServer.Types.dll</HintPath>
               <Private>True</Private>
@@ -155,17 +173,18 @@
             <Reference Include="System.Json">
               <HintPath>packages\System.Json\lib\net40\System.Json.dll</HintPath>
               <Private>True</Private>
+              <Paket>True</Paket>
+            </Reference>
+            <Reference Include="System.Data">
+              <Paket>True</Paket>
+            </Reference>
+            <Reference Include="System.Xml">
               <Paket>True</Paket>
             </Reference>
           </ItemGroup>
         </When>
         <When Condition="$(TargetFrameworkVersion) == 'v4.0'">
           <ItemGroup>
-            <Reference Include="FSharp.Data.SqlClient">
-              <HintPath>packages\FSharp.Data.SqlClient\lib\net40\FSharp.Data.SqlClient.dll</HintPath>
-              <Private>True</Private>
-              <Paket>True</Paket>
-            </Reference>
             <Reference Include="FSharpPlus">
               <HintPath>packages\FSharpPlus\lib\net40\FSharpPlus.dll</HintPath>
               <Private>True</Private>
@@ -178,11 +197,6 @@
             </Reference>
             <Reference Include="FsControl.Core">
               <HintPath>packages\FsControl\lib\net40\FsControl.Core.dll</HintPath>
-              <Private>True</Private>
-              <Paket>True</Paket>
-            </Reference>
-            <Reference Include="LinqBridge">
-              <HintPath>packages\LinqBridge\lib\net20\LinqBridge.dll</HintPath>
               <Private>True</Private>
               <Paket>True</Paket>
             </Reference>
@@ -206,15 +220,16 @@
               <Private>True</Private>
               <Paket>True</Paket>
             </Reference>
+            <Reference Include="System.Data">
+              <Paket>True</Paket>
+            </Reference>
+            <Reference Include="System.Xml">
+              <Paket>True</Paket>
+            </Reference>
           </ItemGroup>
         </When>
         <Otherwise>
           <ItemGroup>
-            <Reference Include="FSharp.Data.SqlClient">
-              <HintPath>packages\FSharp.Data.SqlClient\lib\net40\FSharp.Data.SqlClient.dll</HintPath>
-              <Private>True</Private>
-              <Paket>True</Paket>
-            </Reference>
             <Reference Include="FSharpPlus">
               <HintPath>packages\FSharpPlus\lib\net40\FSharpPlus.dll</HintPath>
               <Private>True</Private>
@@ -227,11 +242,6 @@
             </Reference>
             <Reference Include="FsControl.Core">
               <HintPath>packages\FsControl\lib\net40\FsControl.Core.dll</HintPath>
-              <Private>True</Private>
-              <Paket>True</Paket>
-            </Reference>
-            <Reference Include="LinqBridge">
-              <HintPath>packages\LinqBridge\lib\net20\LinqBridge.dll</HintPath>
               <Private>True</Private>
               <Paket>True</Paket>
             </Reference>
@@ -255,17 +265,18 @@
               <Private>True</Private>
               <Paket>True</Paket>
             </Reference>
+            <Reference Include="System.Data">
+              <Paket>True</Paket>
+            </Reference>
+            <Reference Include="System.Xml">
+              <Paket>True</Paket>
+            </Reference>
           </ItemGroup>
         </Otherwise>
       </Choose>
     </When>
     <When Condition="$(TargetFrameworkIdentifier) == 'MonoAndroid'">
       <ItemGroup>
-        <Reference Include="FSharp.Data.SqlClient">
-          <HintPath>packages\FSharp.Data.SqlClient\lib\net40\FSharp.Data.SqlClient.dll</HintPath>
-          <Private>True</Private>
-          <Paket>True</Paket>
-        </Reference>
         <Reference Include="FSharpPlus">
           <HintPath>packages\FSharpPlus\lib\net40\FSharpPlus.dll</HintPath>
           <Private>True</Private>
@@ -278,11 +289,6 @@
         </Reference>
         <Reference Include="FsControl.Core">
           <HintPath>packages\FsControl\lib\net40\FsControl.Core.dll</HintPath>
-          <Private>True</Private>
-          <Paket>True</Paket>
-        </Reference>
-        <Reference Include="LinqBridge">
-          <HintPath>packages\LinqBridge\lib\net20\LinqBridge.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
@@ -304,17 +310,18 @@
         <Reference Include="System.Json">
           <HintPath>packages\System.Json\lib\net40\System.Json.dll</HintPath>
           <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="System.Data">
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="System.Xml">
           <Paket>True</Paket>
         </Reference>
       </ItemGroup>
     </When>
     <When Condition="$(TargetFrameworkIdentifier) == 'MonoTouch'">
       <ItemGroup>
-        <Reference Include="FSharp.Data.SqlClient">
-          <HintPath>packages\FSharp.Data.SqlClient\lib\net40\FSharp.Data.SqlClient.dll</HintPath>
-          <Private>True</Private>
-          <Paket>True</Paket>
-        </Reference>
         <Reference Include="FSharpPlus">
           <HintPath>packages\FSharpPlus\lib\net40\FSharpPlus.dll</HintPath>
           <Private>True</Private>
@@ -327,11 +334,6 @@
         </Reference>
         <Reference Include="FsControl.Core">
           <HintPath>packages\FsControl\lib\net40\FsControl.Core.dll</HintPath>
-          <Private>True</Private>
-          <Paket>True</Paket>
-        </Reference>
-        <Reference Include="LinqBridge">
-          <HintPath>packages\LinqBridge\lib\net20\LinqBridge.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
@@ -353,17 +355,18 @@
         <Reference Include="System.Json">
           <HintPath>packages\System.Json\lib\net40\System.Json.dll</HintPath>
           <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="System.Data">
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="System.Xml">
           <Paket>True</Paket>
         </Reference>
       </ItemGroup>
     </When>
     <When Condition="$(TargetFrameworkIdentifier) == 'Silverlight'">
       <ItemGroup>
-        <Reference Include="FSharp.Data.SqlClient">
-          <HintPath>packages\FSharp.Data.SqlClient\lib\net40\FSharp.Data.SqlClient.dll</HintPath>
-          <Private>True</Private>
-          <Paket>True</Paket>
-        </Reference>
         <Reference Include="FSharpPlus">
           <HintPath>packages\FSharpPlus\lib\net40\FSharpPlus.dll</HintPath>
           <Private>True</Private>
@@ -376,11 +379,6 @@
         </Reference>
         <Reference Include="FsControl.Core">
           <HintPath>packages\FsControl\lib\net40\FsControl.Core.dll</HintPath>
-          <Private>True</Private>
-          <Paket>True</Paket>
-        </Reference>
-        <Reference Include="LinqBridge">
-          <HintPath>packages\LinqBridge\lib\net20\LinqBridge.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
@@ -402,17 +400,18 @@
         <Reference Include="System.Json">
           <HintPath>packages\System.Json\lib\net40\System.Json.dll</HintPath>
           <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="System.Data">
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="System.Xml">
           <Paket>True</Paket>
         </Reference>
       </ItemGroup>
     </When>
     <When Condition="$(TargetFrameworkIdentifier) == 'Windows'">
       <ItemGroup>
-        <Reference Include="FSharp.Data.SqlClient">
-          <HintPath>packages\FSharp.Data.SqlClient\lib\net40\FSharp.Data.SqlClient.dll</HintPath>
-          <Private>True</Private>
-          <Paket>True</Paket>
-        </Reference>
         <Reference Include="FSharpPlus">
           <HintPath>packages\FSharpPlus\lib\net40\FSharpPlus.dll</HintPath>
           <Private>True</Private>
@@ -425,11 +424,6 @@
         </Reference>
         <Reference Include="FsControl.Core">
           <HintPath>packages\FsControl\lib\net40\FsControl.Core.dll</HintPath>
-          <Private>True</Private>
-          <Paket>True</Paket>
-        </Reference>
-        <Reference Include="LinqBridge">
-          <HintPath>packages\LinqBridge\lib\net20\LinqBridge.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
@@ -451,17 +445,18 @@
         <Reference Include="System.Json">
           <HintPath>packages\System.Json\lib\net40\System.Json.dll</HintPath>
           <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="System.Data">
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="System.Xml">
           <Paket>True</Paket>
         </Reference>
       </ItemGroup>
     </When>
     <When Condition="$(TargetFrameworkIdentifier) == 'WindowsPhoneApp'">
       <ItemGroup>
-        <Reference Include="FSharp.Data.SqlClient">
-          <HintPath>packages\FSharp.Data.SqlClient\lib\net40\FSharp.Data.SqlClient.dll</HintPath>
-          <Private>True</Private>
-          <Paket>True</Paket>
-        </Reference>
         <Reference Include="FSharpPlus">
           <HintPath>packages\FSharpPlus\lib\net40\FSharpPlus.dll</HintPath>
           <Private>True</Private>
@@ -474,11 +469,6 @@
         </Reference>
         <Reference Include="FsControl.Core">
           <HintPath>packages\FsControl\lib\net40\FsControl.Core.dll</HintPath>
-          <Private>True</Private>
-          <Paket>True</Paket>
-        </Reference>
-        <Reference Include="LinqBridge">
-          <HintPath>packages\LinqBridge\lib\net20\LinqBridge.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
@@ -500,17 +490,18 @@
         <Reference Include="System.Json">
           <HintPath>packages\System.Json\lib\net40\System.Json.dll</HintPath>
           <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="System.Data">
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="System.Xml">
           <Paket>True</Paket>
         </Reference>
       </ItemGroup>
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="FSharp.Data.SqlClient">
-          <HintPath>packages\FSharp.Data.SqlClient\lib\net40\FSharp.Data.SqlClient.dll</HintPath>
-          <Private>True</Private>
-          <Paket>True</Paket>
-        </Reference>
         <Reference Include="FSharpPlus">
           <HintPath>packages\FSharpPlus\lib\net40\FSharpPlus.dll</HintPath>
           <Private>True</Private>
@@ -523,11 +514,6 @@
         </Reference>
         <Reference Include="FsControl.Core">
           <HintPath>packages\FsControl\lib\net40\FsControl.Core.dll</HintPath>
-          <Private>True</Private>
-          <Paket>True</Paket>
-        </Reference>
-        <Reference Include="LinqBridge">
-          <HintPath>packages\LinqBridge\lib\net20\LinqBridge.dll</HintPath>
           <Private>True</Private>
           <Paket>True</Paket>
         </Reference>
@@ -549,6 +535,12 @@
         <Reference Include="System.Json">
           <HintPath>packages\System.Json\lib\net40\System.Json.dll</HintPath>
           <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="System.Data">
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="System.Xml">
           <Paket>True</Paket>
         </Reference>
       </ItemGroup>
