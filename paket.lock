@@ -1,3 +1,4 @@
+CONTENT: NONE
 NUGET
   remote: https://nuget.org/api/v2
   specs:
@@ -7,11 +8,16 @@ NUGET
       ReadOnlyCollectionInterfaces (1.0.0)
       System.Json (>= 4.0.20126.16343)
     FsControl (1.0.9)
+    FSharp.Data.SqlClient (1.4.4)
+      Microsoft.SqlServer.Types (>= 11.0.0)
     FSharpPlus (0.0.4)
       FsControl (>= 1.0.9)
     LinqBridge (1.3.0)
+    Microsoft.SqlServer.Types (11.0.1)
     ReadOnlyCollectionExtensions (1.2.0)
-      LinqBridge (>= 1.3.0)
-      ReadOnlyCollectionInterfaces (1.0.0)
+      LinqBridge (>= 1.3.0) - net20
+      ReadOnlyCollectionInterfaces (1.0.0) - net20
+      ReadOnlyCollectionInterfaces (1.0.0) - net35
+      ReadOnlyCollectionInterfaces (1.0.0) - net40
     ReadOnlyCollectionInterfaces (1.0.0)
     System.Json (4.0.20126.16343)
